@@ -1,0 +1,14 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker info
+    - ./bootstrap.sh
+    - docker build -t utserver .
+
+test:
+  override:
+    - docker run -d -v $(pwd)/data:/data -p 8080:8080 utserver -settingspath /data; sleep 5
+    - "curl --retry 10 --retry-delay 5 --user admin: http://localhost:8080/gui/"
