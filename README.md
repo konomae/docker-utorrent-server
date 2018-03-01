@@ -1,6 +1,6 @@
 # docker-utorrent-server
 
-[![Circle CI](https://circleci.com/gh/konomae/docker-utorrent-server.png?style=badge)](https://circleci.com/gh/konomae/docker-utorrent-server)
+[![Circle CI](https://circleci.com/gh/konomae/docker-utorrent-server.svg?style=svg)](https://circleci.com/gh/konomae/docker-utorrent-server)
 
 
 ## Build
